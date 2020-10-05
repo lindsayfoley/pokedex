@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
-import Pokemon from "./Pokemon";
+import PokemonListings from "./PokemonListings";
 import PokemonDetailsPage from "./PokemonDetailsPage";
 
 const Nav = () => (
@@ -23,7 +23,7 @@ const Nav = () => (
     <Switch>
       <Route exact path="/" component={Home}></Route>
       <Route path="/about" component={About}></Route>
-      <Route exact path="/pokemon" component={Pokemon}></Route>
+      <Route exact path="/pokemon" component={PokemonListings}></Route>
       <Route path="/pokemon/:id" component={PokemonDetailsPage}></Route>
     </Switch>
   </Router>
